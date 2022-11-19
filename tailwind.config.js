@@ -5,6 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      josefin: ["Josefin Sans", "sans-serif"],
+      lora: ["Lora", "serif"],
+      varela: ["Varela", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],
