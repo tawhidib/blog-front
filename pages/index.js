@@ -1,3 +1,4 @@
+import Posts from "../components/Posts/Posts";
 import SideBar from "../components/SideBar/SideBar";
 import header_img from "../public/images/header_img.webp";
 
@@ -10,7 +11,9 @@ export default function Home() {
       <img className="h-[450px] w-full object-cover" src={header_img.src} />
 
       <div className="grid grid-cols-4 mt-12">
-        <div className="col-span-3">1</div>
+        <div className="col-span-3">
+          <Posts />
+        </div>
         <div className="col-span-1">
           <SideBar />
         </div>
