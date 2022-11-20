@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import postImg from "../../public/images/post.jpg";
 function Post() {
@@ -19,7 +20,7 @@ function Post() {
 
         {/* post title */}
         <h4 className="font-josefin text-xl font-bold mt-4 cursor-pointer">
-          Post Title
+          <Link href={"/posts/" + 1}>Post Title</Link>
         </h4>
 
         <hr />
@@ -34,8 +35,8 @@ function Post() {
         <p
           style={{
             display: "-webkit-box",
-            "-webkit-line-clamp": "4",
-            "-webkit-box-orient": "vertical",
+            WebkitLineClamp: 4,
+            WebkitBoxOrient: "vertical",
           }}
           className="mt-4 font-varela leading-6 text-base overflow-hidden text-ellipsis "
         >
